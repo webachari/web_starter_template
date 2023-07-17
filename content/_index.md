@@ -1,92 +1,91 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Welcome to ABC Primary School
+  content: Let's Explore and Learn Together!
   image: /images/banner-art.svg
+  video: /videos/home_blog.mp4
   button:
     label: "Contact Us"
     link: "/contact"
 
 # feature
 feature: 
-  title: Something You Need To Know
+  title: Why Choose ABC Primary School?
   features:
-  - name: "Clean Code"
+  - name: "Holistic Education"
     icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
+    content: "Our school follows a child-centered approach to education, ensuring each student's unique needs are met."
+  - name: "Experienced Teachers"
     icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "24h Service"
+    content: "With our experienced and caring teachers, your child will receive the best guidance and support for their growth."
+  - name: "Engaging Curricula"
     icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
+    content: "At ABC Primary School, we offer engaging and interactive curricula to make learning a joyful experience."
+  - name: "Safe Learning Environment"
     icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
+    content: "Safety is our priority, and our campus is designed to provide a secure environment for your child's education."
+  - name: "Holistic Development"
     icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
+    content: "We focus on the holistic development of each student, nurturing their intellectual, physical, and emotional growth."
+  - name: "Parent Involvement"
     icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "At ABC Primary School, we encourage active parent involvement to build a strong home-school partnership."
 
 # services
 services:
-  - title: "It is the most advanced digital marketing and it company."
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Academic Excellence"
+    content: "Our school provides a strong foundation in academics, helping students develop critical thinking skills and a love for learning."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
+      - "/images/sport1.jpg"
+      - "/images/sport2.jpg"
       - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
-      link: /contact
+      label: "Learn More"
+      link: /academics
 
-  - title: "It is a privately owned Information and cyber security company"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Extracurricular Activities"
+    content: "We offer a range of extracurricular activities to enhance students' creativity, sportsmanship, and teamwork."
     images: 
-      - "/images/service-slide-1.png"
+      - "/images/sport1.jpg"
+      - "/images/sport2.jpg"
     button:
       enable: true
-      label: Check it out
-      link: /contact
+      label: "Explore Activities"
+      link: /activities
   
-  - title: "It’s a team of experienced and skilled people with distributions"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Admissions Open"
+    content: "Enroll your child in our nurturing environment to embark on a journey of exploration and discovery."
     images:
       - "/images/service-slide-1.png"
       - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
-      link: /contact
+      label: "Apply Now"
+      link: /admissions
 
-  - title: "A company standing different from others"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Parent Resources"
+    content: "Access helpful resources and stay involved in your child's education journey with us."
     images:
       - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
     button:
       enable: true
-      label: Check it out
-      link: /contact
+      label: "Parent Portal"
+      link: /parents
 
 # workflow
 workflow: 
-  title: "Experience the best workflow with us"
+  title: "Experience the Joy of Learning"
   image: "/images/banner.svg"
-  description: ""
+  description: "At ABC Primary School, we believe that learning should be a joyful and enriching experience for every child."
 
 # call_to_action
 call_to_action:
-  title: Ready to get started?
-  content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur.
+  title: Join Our School Today!
+  content: "We are excited to welcome your child into our learning community. Let's embark on an inspiring educational journey together."
   image: '/images/cta.svg'
   button:
     enable: true
-    label: "Contact Us"
-    link: "/contact"
+    label: "Apply Now"
+    link: "/admissions"
 ---

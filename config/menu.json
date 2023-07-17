@@ -5,15 +5,23 @@
       "url": "/"
     },
     {
-      "name": "Blog",
+      "name": "About Us",
+      "url": "/about"
+    },
+    {
+      "name": "Academics",
       "url": "/blogs"
     },
     {
-      "name": "Pricing",
-      "url": "/pricing"
+      "name": "Admission",
+      "url": "/admission"
     },
     {
-      "name": "Contact",
+      "name": "Events",
+      "url": "/events"
+    },
+    {
+      "name": "Contact Us",
       "url": "/contact"
     },
     {
