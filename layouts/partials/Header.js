@@ -18,10 +18,11 @@ const Header = () => {
   // logo source
   const { logo } = config.site;
   const { enable, label, link } = config.nav_button;
+  console.log({ enable, label, link })
 
   return (
     <header className="header">
-      <nav className="navbar container">
+      <nav className="navbar container ">
         {/* logo */}
         <div className="order-0">
           <Logo src={logo} />
@@ -36,6 +37,7 @@ const Header = () => {
           {navOpen ? (
             <svg className="h-6 fill-current" viewBox="0 0 20 20">
               <title>Menu Open</title>
+              <h1>hi</h1>
               <polygon
                 points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
                 transform="rotate(45 10 10)"
@@ -49,7 +51,7 @@ const Header = () => {
           )}
         </button>
 
-        {/* Menu */}
+        Menu
         <div
           id="nav-menu"
           className={`order-3 md:order-1 ${
@@ -59,7 +61,9 @@ const Header = () => {
           <ul className="navbar-nav block w-full md:flex md:w-auto lg:space-x-2">
             {main.map((menu, i) => (
               <React.Fragment key={`menu-${i}`}>
+               
                 {menu.hasChildren ? (
+                 
                   <li className="nav-item nav-dropdown group relative">
                     <span className="nav-link inline-flex items-center">
                       {menu.name}
@@ -81,15 +85,17 @@ const Header = () => {
                     </ul>
                   </li>
                 ) : (
+                  
                   <li className="nav-item">
                     <Link
                       href={menu.url}
                       onClick={() => setNavOpen(false)}
                       className={`nav-link block ${
-                        router.asPath === menu.url ? "nav-link-active" : ""
+                  
+                        router .asPath === menu.url ? "nav-link-active" : ""
                       }`}
                     >
-                      {menu.name}
+                      {menu.name}{console.log(router.asPath,menu.url)}
                     </Link>
                   </li>
                 )}

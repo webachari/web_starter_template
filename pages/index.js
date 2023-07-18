@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from 'react';
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
 import Cta from "@layouts/components/Cta";
@@ -8,20 +9,42 @@ import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import { getListPage } from "../lib/contentParser";
+import { closestIndexTo } from "date-fns";
 
 const Home = ({ frontmatter }) => {
+  
+    const videoRef = useRef(null);
+  
+    useEffect(() => {
+      const video = videoRef.current;
+  
+      const playVideo = () => {
+        video.play().catch(error => {
+          // Handle video play error
+          console.error('Video playback failed:', error);
+        });
+      };
+  
+      playVideo();
+  
+      return () => {
+        // Clean up and pause the video on unmount
+        video.pause();
+      };
+    }, []);
+  console.log(frontmatter)
   const { banner, feature, services, workflow, call_to_action } = frontmatter;
   const { title } = config.site;
 
   return (
     <Base title={title}>
       {/* Banner */}
-      <section className="section pb-[50px]">
-        <div className="container">
-          <div className="row text-center">
-            <div className="mx-auto lg:col-10">
-              <h1 className="font-primary font-bold">{banner.title}</h1>
-              <p className="mt-4">{markdownify(banner.content)}</p>
+      <section className="section pb-[50px] ">
+        <div className="container ">
+          <div className="row">
+            <div className="mx-auto lg:col-10 h-[400px]">
+              <h1 className="font-primary font-bold text-white">{banner.title}</h1>
+              <p className="mt-4 text-white">{markdownify(banner.content)}</p>
               {banner.button.enable && (
                 <Link
                   className="btn btn-primary mt-4"
@@ -31,14 +54,12 @@ const Home = ({ frontmatter }) => {
                   {banner.button.label}
                 </Link>
               )}
-              <Image
-                className="mx-auto mt-12"
-                src={banner.image}
-                width={750}
-                height={390}
-                alt="banner image"
-                priority
-              />
+             
+             <video ref={videoRef} className="video-background absolute h-[100%] w-[100%] object-cover -z-10 top-20 left-0 " autoPlay muted loop>
+      <source src={banner.video} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    
             </div>
           </div>
         </div>
@@ -81,7 +102,7 @@ const Home = ({ frontmatter }) => {
         return (
           <section
             key={`service-${index}`}
-            className={`section ${isOdd && "bg-theme-light"}`}
+            className={`section ${isOdd?"bg-theme-light text-black":"text-white bg-slate-600"}`} 
           >
             <div className="container">
               <div className="items-center gap-8 md:grid md:grid-cols-2">
@@ -138,7 +159,7 @@ const Home = ({ frontmatter }) => {
       })}
 
       {/* workflow */}
-      <section className="section pb-0">
+      <section className="section pb-0 bg-slate-600">
         <div className="mb-8 text-center">
           {markdownify(
             workflow.title,

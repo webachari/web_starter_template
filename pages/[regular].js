@@ -4,6 +4,9 @@ import Contact from "@layouts/Contact";
 import Default from "@layouts/Default";
 import Faq from "@layouts/Faq";
 import Pricing from "@layouts/Pricing";
+import Admission from "@layouts/Admission";
+import Events from "@layouts/Events";
+import Academics from "@layouts/Academics"
 import { getRegularPage, getSinglePage } from "@lib/contentParser";
 
 // for all regular pages
@@ -29,7 +32,13 @@ const RegularPages = ({ data }) => {
         <Pricing data={data} />
       ) : layout === "faq" ? (
         <Faq data={data} />
-      ) : (
+      ) :  layout === "admission" ? (
+        <Admission data={data} />
+      ):layout === "academics" ? (
+        <Academics data={data} />
+      ) :layout === "events" ? (
+        <Events data={data} />
+      ):(
         <Default data={data} />
       )}
     </Base>
